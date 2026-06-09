@@ -1,5 +1,7 @@
 # MCP Finance Gateway (`Unique-Gate`)
 
+[![MCP Gateway Integration Test](https://github.com/yuschajp/mcp-finance-gateway/actions/workflows/mcp-test.yml/badge.svg)](https://github.com/yuschajp/mcp-finance-gateway/actions)
+
 An institutional-grade implementation of the **Model Context Protocol (MCP)** designed for multi-broker session isolation, secure authentication mapping via OIDC layout, and real-time portfolio resource streaming.
 
 ## 🏗️ Architecture Overview
