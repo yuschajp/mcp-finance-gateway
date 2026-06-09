@@ -18,4 +18,3 @@ This framework bridges the gap between agentic LLM context windows and secure ca
 ```bash
 pip install "mcp[cli]"
 python test_run.py
-\`\`\`
