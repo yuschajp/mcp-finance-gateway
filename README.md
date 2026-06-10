@@ -12,6 +12,7 @@ This gateway bridges the gap between agentic LLM context windows and secure capi
 
 ### System Workflow Blueprint
 
+```
 ```mermaid
 graph TD
     classDef analyst fill:#e6f7ff,stroke:#1890ff,stroke-width:2px;
@@ -23,13 +24,13 @@ graph TD
     Agent[🧠 LLM Risk Agent]:::agent
     Gateway[🔐 Unique-Gate Gateway]:::gateway
     
-    subgraph Upstream Intelligence (Context)
+    subgraph Upstream["Upstream Intelligence (Context)"]
         SSO[Bank Feed via SSO]:::secure
         S3[Alternative Data S3]:::secure
         Quant[On-Prem Risk Models]:::secure
     end
 
-    subgraph Downstream Execution (Safety)
+    subgraph Downstream["Downstream Execution (Safety)"]
         FIX[AeroFIX Sentinel Firewall]:::gateway
         Venue[Execution Venue / Broker]:::secure
     end
@@ -37,14 +38,12 @@ graph TD
     Analyst -->|1. Prompt Portfolio Request| Agent
     Agent -->|2. Request URI: research://| Gateway
     
-    Gateway -->|3. Background SSO & Token Exchange| Upstream Intelligence
-    Upstream Intelligence -->|4. Standardized Context Stream| Gateway
+    Gateway -->|3. Background SSO & Token Exchange| Upstream
+    Upstream -->|4. Standardized Context Stream| Gateway
     Gateway -->|5. Deliver Clean JSON Block| Agent
     
     Agent -->|6. Propose Execution Intent| FIX
     FIX -->|7. Hard Risk Cap Validation| Venue
-```
-
 The gateway operates across two primary vector spaces to handle sensitive institutional workflows:
 
 *   **Downstream Operations (Session Isolation Tool):** Dynamically instantiates isolated runtime environments for unique brokerage integrations mapped via secure token parameters to prevent horizontal data leaks.
