@@ -48,3 +48,6 @@ graph TD
     
     Agent -->|6. Propose Execution Intent| FIX
     FIX -->|7. Hard Risk Cap Validation| Venue
+--------------------------------------------------------
+
+* **`STRATEGIES.md`**: [View Full Documentation](./STRATEGIES.md) — Detailed overview of the quantitative asset allocation models, risk parity matrix formulas, and portfolio optimization logic.
