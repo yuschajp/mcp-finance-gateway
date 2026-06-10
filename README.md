@@ -12,8 +12,8 @@ This gateway bridges the gap between agentic LLM context windows and secure capi
 
 The gateway operates across two primary vector spaces to handle sensitive institutional workflows:
 
-* **Upstream Intelligence (Context Aggregation):** Normalizes fragmented research endpoints—whether behind an external vendor's SSO or an internal secure cloud database—into standardized, read-only URI schemes (`research://`).
-* **Downstream Operations (Session Isolation & Safety):** Dynamically instantiates isolated runtime environments for unique brokerage integrations mapped via secure token parameters to prevent horizontal data leaks, while enforcing deterministic risk firewalls.
+* **Upstream Intelligence (Context Aggregation & Narrative Compilation):** Normalizes fragmented research endpoints—whether behind an external vendor's SSO or an internal secure cloud database—into standardized, read-only URI schemes (`research://`). Includes an active processing layer that distills raw data feeds into polished, front-office narrative briefs.
+* **Downstream Operations (Session Isolation & Safety Firewall):** Dynamically instantiates isolated runtime environments for unique brokerage integrations mapped via secure token parameters to prevent horizontal data leaks, while routing all agent execution intents through deterministic risk firewalls.
 
 ### System Workflow Blueprint
 
